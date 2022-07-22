@@ -8,7 +8,7 @@ const getAll = async () => {
 const get = async (userId) => {
   const user = await User.findByPk(userId);
   if (!user) {
-    throw 'User Not Found';
+    throw new Error('User Not Found');
   }
   return user;
 };

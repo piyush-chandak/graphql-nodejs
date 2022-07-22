@@ -1,8 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const app = express();
 
 const restRoutes = require('./app/routes/rest');
-const app = express();
+const graphqlRoutes = require('./app/routes/graphql');
 
 const { responseHandler } = require('./app/helper/application');
 
@@ -18,6 +19,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/rest', restRoutes);
+app.use('/graphql', graphqlRoutes);
 
 // Error handling for routes
 app.use((req, res) => {

@@ -30,3 +30,8 @@ If you need to run node app with nodemon
 3. sequelize and sequelize-cli
 4. nodemon
 5. body-parser
+
+
+### Helping Resources
+- https://blog.logrocket.com/crud-react-graphql-examples/
+- https://www.youtube.com/watch?v=WxBMUpjDMDw&ab_channel=MichaelBromley
